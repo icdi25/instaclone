@@ -6,50 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style media="screen">
-html, body{
-  height: 100%;
-}
+      html, body{
+      height: 100%;
+      }
 
      body{
        background-color: blue;
        margin: 0;
      }
+
      .father{
        width: 100%;
-       height: 500%;
+       height: 100%;
        background-color: red;
-       box-sizing: border-box;
-       padding: 30px;
        display: flex;
-       flex direction: column;
-       justify-content: flex-start;
+       flex-direction: column;
+       justify-content: space-between;
        align-items: center;
      }
      .child {
        width: 27.8%;
-       height: 200px;
+       height: 100px;
        background-color: yellow;
-       border: 10px solid green;
-
+       display: flex;
+       justify-content: center;
+       align-items: center;
     }
     .grandchild {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background-color: green;
       height: 100px;
       width: 100px;
+      position: fixed;
+      left: 10px;
+      top: 10px;
+      background-color: green;
     }
-    #one{align-self: flex-start;}
-    #three{align-self: flex-end;}
     </style>
   </head>
+
   <body>
     <div class="father">
-      <div id="one" class="child"></div>
-      <div id="three" class="child"><div class="grandchild"></div></div>
-
+      <div id="three" class="child">
+        <div class="grandchild"></div>
+      </div>
+      <div class="child">1</div>
+      <div class="child">2</div>
     </div>
-  </body>
-
-  </html>
